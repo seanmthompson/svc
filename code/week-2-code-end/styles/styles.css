@@ -1,0 +1,41 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+div {
+  background-color: #efefef;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1,
+h2,
+h3 {
+  color:#228B22;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+a {
+  color: #3b5998;
+}
+
+p {
+  color: #555;
+}
+
+span {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+small {
+  color: #999999;
+}

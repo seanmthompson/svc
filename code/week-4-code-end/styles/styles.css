@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+p {
+  color: #999999;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.overlay {
+  background-color: #0dbf9b;
+  color: #ffffff;
+}
+
+.overlay p {
+  color: #ffffff;
+}
+
+.padding {
+  padding: 100px 0;
+}
+
+.opacity {
+  opacity: .85;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+header {
+  background: #333333;
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+header #logo {
+  display: block;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 13px 0 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ebebeb;
+  text-decoration: underline;
+}
+
+#hero {
+  margin-top: 86px;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#hero .overlay {
+  padding: 250px;
+}
+
+.box {
+  width: 250px;
+  float: left;
+  padding: 20px;
+  margin: 50px 10px;
+  border: 1px solid #ebebeb;
+}
+
+.box:first-child {
+  margin-left: 0;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.box p {
+  font-size: 80%;
+}
+
+#portfolio {
+  background-color: #f6f6f6;
+}
+
+.portfolio-piece {
+  margin: 25px;
+  vertical-align: top;
+  padding: 5px;
+  cursor:pointer;
+  border: 1px solid #cccccc;
+}
+
+.portfolio-piece:hover {
+  opacity: 0.5;
+}
+
+#about .clearfix {
+  margin: 100px 0 0;
+}
+
+#about .pull-right {
+  text-align: left;
+  width: 500px;
+}
+
+#numbers h3 {
+  margin: 0;
+  font-size: 300%;
+  font-weight: normal;
+}
+
+#numbers p {
+  margin: 0;
+  font-size: 85%;
+}
+
+footer {
+  padding: 20px;
+  background: #333333;
+}
+
+.social-links {
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-links li img {
+  height: 25px;
+  margin: 5px 15px;
+}
+
+footer p {
+  margin: 0;
+}

@@ -11,8 +11,16 @@
     <meta name="description" content="CSS Floats">
 
     <style>
+      #wrapper {
+        position: relative;
+        border: 1px solid orange;
+        margin-bottom: 1000px;
+        z-index: 10;
+      }
+
       .container {
         padding: 20px;
+        margin: 100px 50px;
         border: 2px solid green;
       }
 
@@ -20,26 +28,52 @@
         padding: 10px;
         margin: 5px;
         border: 1px solid red;
+        position: relative;
+        z-index: 10;
       }
 
       #content {
         padding: 10px;
         margin: 5px;
         border: 1px solid blue;
+        position: relative;
+        top: 5px;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+      }
+
+      #footer {
+        position: fixed;
+        background: #ebebeb;
+        top: 0;
+        left: 0;
+        border: 1px solid #000000;
+        width: 100%;
       }
     </style>
 
   </head>
 
   <body>
-    <div class="container">
-      <div id="sidebar">
-        <p>Some text over here</p>
-      </div>
-      <div id="content">
-        <h2>Some title</h2>
-        <p>Some text over here</p>
-      </div>
+    <div id="wrapper">
+      <div class="container clearfix">
+        <div id="sidebar">
+          <p>Some text over here</p>
+        </div>
+        <div id="content">
+          <h2>Some title</h2>
+          <p>Some text over here</p>
+        </div>
+        <div id="footer">
+          <p>Some text over here</p>
+          <p>Some text over here</p>
+        </div>
+      </div><!-- container -->
     </div>
   </body>
 

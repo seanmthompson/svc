@@ -10,10 +10,83 @@
     <meta name="author" content="Sean Thompson">
     <meta name="description" content="HTML Tables Demo">
 
+    <style>
+      body {
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        color: blue;
+        border-spacing: 0;
+        padding: 15px;
+        border: 1px solid #ebebeb;
+        margin: 20px;
+      }
+
+      tr {
+        text-align: left;
+      }
+
+      tbody td {
+        border-bottom: 1px solid #cccccc;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: #ebebeb;
+      }
+
+      td,
+      th {
+        padding: 15px;
+        border-left: 1px solid #cccccc;
+      }
+
+      td:last-child,
+      th:last-child {
+        border-right: 1px solid #cccccc;
+      }
+
+      th {
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #000000;
+      }
+    </style>
+
   </head>
 
   <body>
-
+    <h1>My table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Header Column 1</th>
+          <th>Header Column 2</th>
+          <th>Header Column 3</th>
+          <th>Header Column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1 Column 1</td>
+          <td>Row 1 Column 2</td>
+          <td>Row 1 Column 3</td>
+          <td>Row 1 Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 2 Column 1</td>
+          <td>Row 2 Column 2</td>
+          <td>Row 2 Column 3</td>
+          <td>Row 2 Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 3 Column 1</td>
+          <td>Row 3 Column 2</td>
+          <td>Row 3 Column 3</td>
+          <td>Row 3 Column 4</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 
 </html>

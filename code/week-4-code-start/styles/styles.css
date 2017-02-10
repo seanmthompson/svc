@@ -1,3 +1,96 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+  padding: 200px 20px;
+}
+
+.bg-overlay {
+  background-color: rgba(0,0,0,0.75);
+  color: #ffffff;
+}
+
+nav {
+  background-color: #222222;
+  font-size: 16px;
+  padding: 20px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a,
+nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #efefef;
+  text-decoration: underline;
+}
+
+.logo {
+  width: 100%;
+  max-width: 250px;
+}
+
+.bg-fixed {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#hero {
+  background-image: url("../images/skyline.jpg");
+}
+
+.orange-border {
+  width: 320px;
+  border: 2px solid orange;
+  padding: 5px;
+  margin: 60px 10px 0;
+}
+
+#testimonials {
+  background-image: url("../images/mt-rainier.jpg");
+}
+
+footer {
+  background-color: #222222;
+  color: #999999;
+}
+
+footer .container {
+  padding: 10px;
+}
